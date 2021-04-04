@@ -3,7 +3,8 @@
     <div class="header" ref="header">我是header</div>
     <div class="content" :style="{minHeight:minHeight}">
       <div class="inner">
-        <div class="inner-content" @click="contentLists.push('点击我添加内容')" v-for="(item,index) in contentLists" :key="index">
+        <div class="inner-content" @click="contentLists.push('点击我添加内容')" v-for="(item,index) in contentLists"
+             :key="index">
           {{ item }}
         </div>
       </div>
@@ -20,8 +21,8 @@ export default {
       minHeight: "0",
       contentLists: ['点击我添加内容']
     }
-  }
-  ,
+  },
+
   mounted() {
     this.computeContentHeight()
   },

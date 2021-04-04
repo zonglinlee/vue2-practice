@@ -20,7 +20,9 @@ jobs:
     steps:
       - name: step one
         # Uses the default branch of a public repository
-        uses: actions/checkout@main
+        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+        with:
+          persist-credentials: false
       - name: Install and Build
         run: |
           npm install

@@ -1,0 +1,29 @@
+//文本溢出不换行省略号代替
+@mixin text-ellipsis(){
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+//flex简写
+@mixin flexbox ($align:center, $justify:space-between,$direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+/**
+@param {string} $position - 可选值: `static` | `relative` | `absolute` | `fixed`
+@param {string} $args - 可设置值: `top` | `right` | `bottom` | `left`
+example : @include position(absolute,top 0 right 0 bottom 0 left 0);
+https://github.com/W3cplus/SassMagic/blob/master/src/mixins/_position.scss#L34-L42
+*/
+
+@mixin position($position,$args){
+  @each $o in top right bottom left {
+    $i: index($args, $o);
+    @if $i and $i + 1 <= length($args) and type-of(nth($args, $i + 1)) == number {
+      #{$o}: nth($args, $i + 1);
+    }
+  }
+  position: $position;
+}

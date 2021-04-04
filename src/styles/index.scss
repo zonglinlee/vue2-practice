@@ -1,0 +1,16 @@
+@import "./mixin.scss";
+
+h3{
+  text-align: center;
+}
+.content-container{
+  padding: 20px;
+  margin-left: 180px;
+  height: 100vh;
+  overflow: auto;
+  div,p{
+    text-indent: 20px;
+    line-height: 1.2;
+    font-size: 18px;
+  }
+}

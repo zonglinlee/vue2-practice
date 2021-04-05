@@ -23,6 +23,10 @@ export const constantRoutes = [
     {
         path: '/element-height',
         component: () => import('@/views/js1/ElementHeight.vue'),
+    },
+    {
+        path: '/clip-path1',
+        component: () => import('@/views/svg1/ClipPath1.vue'),
     }
 ]
 

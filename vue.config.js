@@ -17,5 +17,6 @@ module.exports = {
     devServer: {
         port: 8888
     },
+    // note::: docker build 的时候不要加 publicPath
     publicPath: process.env.NODE_ENV === 'production' ? '/vue2-practice/' : '/'
 }

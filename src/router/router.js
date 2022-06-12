@@ -27,6 +27,10 @@ export const constantRoutes = [
     {
         path: '/clip-path1',
         component: () => import('@/views/svg1/ClipPath1.vue'),
+    },
+    {
+        path: '/img-error-report',
+        component: () => import('@/views/imgErrorReport/imgErrorReport'),
     }
 ]
 

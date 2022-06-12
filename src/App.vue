@@ -9,6 +9,7 @@
       <router-link to="/button2" class="link-item" @click.native="topMenu=false">Button2样式</router-link>
       <router-link to="/element-height" class="link-item" @click.native="topMenu=false">Vue获取元素尺寸</router-link>
       <router-link to="/clip-path1" class="link-item" @click.native="topMenu=false">svg clipPath动画1</router-link>
+      <router-link to="/img-error-report" class="link-item" @click.native="topMenu=false">img-error-report</router-link>
     </div>
       <router-view></router-view>
   </div>

@@ -19,7 +19,7 @@ export const constantRoutes = [
     {
         path: '/button2',
         component: () => import('@/views/css1/Button2.vue'),
-    }   ,
+    },
     {
         path: '/element-height',
         component: () => import('@/views/js1/ElementHeight.vue'),
@@ -31,15 +31,15 @@ export const constantRoutes = [
     {
         path: '/img-error-report',
         component: () => import('@/views/imgErrorReport/imgErrorReport'),
-    }
+    },
 ]
 
-
-const createRouter = () => new Router({
-    // mode: 'history', // require service support
-    scrollBehavior: () => ({y: 0}),
-    routes: constantRoutes
-})
+const createRouter = () =>
+    new Router({
+        // mode: 'history', // require service support
+        scrollBehavior: () => ({ y: 0 }),
+        routes: constantRoutes,
+    })
 
 const router = createRouter()
 

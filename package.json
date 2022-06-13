@@ -6,7 +6,7 @@
     "node-server": "node ./error-server/app.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -22,8 +22,10 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.7.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.1",
     "sass": "^1.32.8",
     "sass-loader": "10.1.1",
     "vue-template-compiler": "^2.6.11"
@@ -41,6 +43,22 @@
       "parser": "babel-eslint"
     },
     "rules": {}
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{html,css,less,ejs}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "browserslist": [
     "> 1%",

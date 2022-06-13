@@ -42,6 +42,12 @@
                 @click.native="topMenu = false"
                 >img-error-report
             </router-link>
+            <router-link
+                class="link-item"
+                to="/sourcemap-test"
+                @click.native="topMenu = false"
+                >sourceMapTest
+            </router-link>
         </div>
         <router-view></router-view>
     </div>

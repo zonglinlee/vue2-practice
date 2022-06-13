@@ -32,6 +32,10 @@ export const constantRoutes = [
         path: '/img-error-report',
         component: () => import('@/views/imgErrorReport/imgErrorReport'),
     },
+    {
+        path: '/sourcemap-test',
+        component: () => import('@/views/sourceMapTest/sourceMapTest'),
+    },
 ]
 
 const createRouter = () =>

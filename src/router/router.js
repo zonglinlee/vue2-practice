@@ -36,6 +36,10 @@ export const constantRoutes = [
         path: '/sourcemap-test',
         component: () => import('@/views/sourceMapTest/sourceMapTest'),
     },
+    {
+        path: '/animation1',
+        component: () => import('@/views/vueAnimation/Animation1'),
+    },
 ]
 
 const createRouter = () =>

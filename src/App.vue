@@ -48,8 +48,16 @@
                 @click.native="topMenu = false"
                 >sourceMapTest
             </router-link>
+            <router-link
+                class="link-item"
+                to="/animation1"
+                @click.native="topMenu = false"
+                >Animation1
+            </router-link>
         </div>
-        <router-view></router-view>
+        <div style="margin-left: 180px; padding: 15px 0 0 15px">
+            <router-view></router-view>
+        </div>
     </div>
 </template>
 
@@ -75,10 +83,14 @@ export default {
     box-sizing: border-box;
     @include flexbox(flex-start, space-between, column);
     width: 180px;
-    height: 100vh;
+    //height: 100vh;
     font-size: 16px;
     font-weight: bold;
-    @include position(absolute, left 0 top 0);
+    //@include position(absolute, left 0 top 0);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
     background: #ccc;
     padding: 10px;
     overflow-y: auto;

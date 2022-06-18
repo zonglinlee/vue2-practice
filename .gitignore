@@ -5,7 +5,7 @@ error.text
 package-lock.json
 ./error-server/package-lock.json
 
-
+coverage
 # local env files
 .env.local
 .env.*.local

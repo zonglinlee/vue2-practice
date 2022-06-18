@@ -10,5 +10,7 @@ function imgSrcHandleError(err) {
         console.error(err)
     }
 }
-
+export function sum(a, b) {
+    return a + b
+}
 export { imgSrcHandleError }

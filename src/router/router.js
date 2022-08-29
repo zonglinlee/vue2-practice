@@ -38,7 +38,11 @@ export const constantRoutes = [
     },
     {
         path: '/animation1',
-        component: () => import('@/views/vueAnimation/Animation1'),
+        component: () => import('@/views/vueAnimation/Index'),
+    },
+    {
+        path: '/ui-events',
+        component: () => import('@/views/uiEvents/uiEvents'),
     },
 ]
 

@@ -50,9 +50,15 @@
             </router-link>
             <router-link
                 class="link-item"
-                to="/animation1"
+                to="/animationIndex"
                 @click.native="topMenu = false"
-                >Animation1
+                >Animation
+            </router-link>
+            <router-link
+                class="link-item"
+                to="/ui-events"
+                @click.native="topMenu = false"
+                >UI events
             </router-link>
         </div>
         <div style="margin-left: 180px; padding: 15px 0 0 15px">

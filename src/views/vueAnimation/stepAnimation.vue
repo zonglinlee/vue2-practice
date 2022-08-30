@@ -12,7 +12,7 @@ export default {
 .box {
     width: 256px;
     height: 256px;
-    background: url('https://github.com/iamalperen/playground/blob/main/SpriteSheetAnimation/sprite.png?raw=true');
+    background: url('../../assets/images/runSprite.png');
     animation: sprite 0.6s steps(6, end) infinite;
 }
 @keyframes sprite {

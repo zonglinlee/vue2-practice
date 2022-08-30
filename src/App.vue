@@ -56,6 +56,12 @@
             </router-link>
             <router-link
                 class="link-item"
+                to="/css1"
+                @click.native="topMenu = false"
+                >css1
+            </router-link>
+            <router-link
+                class="link-item"
                 to="/ui-events"
                 @click.native="topMenu = false"
                 >UI events

@@ -14,9 +14,12 @@ h3{
     font-size: 18px;
   }
 }
-.m--10{
-  margin-bottom: 10px;
-  margin-top: 10px;
+
+@for $i from 1 through 10 {
+  .m--#{$i * 10} {
+    margin-bottom: #{$i * 10} + px;
+    margin-top: #{$i * 10} + px;
+  }
 }
 
 .border-1-ccc{

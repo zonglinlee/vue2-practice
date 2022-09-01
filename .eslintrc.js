@@ -21,5 +21,6 @@ module.exports = {
     plugins: ['vue'],
     rules: {
         'vue/multi-word-component-names': ['warn'],
+        'no-undef': ['off'],
     },
 }

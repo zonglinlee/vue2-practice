@@ -1,3 +1,4 @@
+const webpack = require('webpack')
 module.exports = {
     lintOnSave: false,
     chainWebpack: (config) => {
@@ -13,12 +14,17 @@ module.exports = {
                 })
                 .end()
         })
+        config.plugin('provide').use(webpack.ProvidePlugin, [
+            {
+                $: 'jquery',
+                jquery: 'jquery',
+                jQuery: 'jquery',
+                'window.jQuery': 'jquery',
+            },
+        ])
     },
     devServer: {
         port: 8888,
-    },
-    configureWebpack: {
-        devtool: 'source-map',
     },
     // note::: docker build 的时候不要加 publicPath
     publicPath: process.env.NODE_ENV === 'production' ? '/vue2-practice/' : '/',

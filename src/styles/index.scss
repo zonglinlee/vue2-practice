@@ -34,3 +34,30 @@ h3{
 .cursor-pointer{
   cursor: pointer;
 }
+
+.demo-btns-group{
+  .list-style {
+    list-style: none;
+    display: flex;
+    background: #0c455e;
+    color: white;
+    padding: 0;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    li {
+      padding: 5px;
+      cursor: pointer;
+      text-align: center;
+      border-right: solid 1px white;
+    }
+    li.is-active {
+      color: orangered;
+    }
+  }
+}
+
+@include custom-scroll-bar(8px);

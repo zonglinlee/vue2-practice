@@ -6,19 +6,15 @@ Vue.use(Router)
 export const constantRoutes = [
     {
         path: '/scroll-snap1',
-        component: () => import('@/views/css1/ScrollSnap1.vue'),
+        component: () => import('@/views/css1/animation/ScrollSnap1.vue'),
     },
     {
         path: '/flex1',
-        component: () => import('@/views/css1/Flex1.vue'),
+        component: () => import('@/views/css1/animation/Flex1.vue'),
     },
     {
         path: '/button1',
-        component: () => import('@/views/css1/Button1.vue'),
-    },
-    {
-        path: '/button2',
-        component: () => import('@/views/css1/Button2.vue'),
+        component: () => import('@/views/css1/button/index.vue'),
     },
     {
         path: '/element-height',
@@ -38,7 +34,7 @@ export const constantRoutes = [
     },
     {
         path: '/css1',
-        component: () => import('@/views/css1/index'),
+        component: () => import('@/views/css1/animation'),
     },
     {
         path: '/animationIndex',

@@ -15,30 +15,22 @@
 </template>
 
 <script>
-import Animation1 from '@/views/vueAnimation/Animation1'
-import huaWeiCharge from '@/views/vueAnimation/huaWeiChargeing'
-import stepAnimation from '@/views/vueAnimation/stepAnimation'
-import loading from '@/views/vueAnimation/loading'
-import cssBeer from '@/views/vueAnimation/cssBeer'
+import Button1 from '@/views/css1/button/Button1'
+import Button2 from '@/views/css1/button/Button2'
+import hoverBtn from '@/views/css1/button/hoverBtn'
+import pressBtn from '@/views/css1/button/pressBtn'
 export default {
     name: 'index',
     components: {
-        Animation1,
-        huaWeiCharge,
-        stepAnimation,
-        loading,
-        cssBeer,
+        Button1,
+        Button2,
+        hoverBtn,
+        pressBtn,
     },
     data() {
         return {
-            nameList: [
-                'Animation1',
-                'huaWeiCharge',
-                'stepAnimation',
-                'loading',
-                'cssBeer',
-            ],
-            componentName: 'Animation1',
+            nameList: ['Button1', 'Button2', 'hoverBtn', 'pressBtn'],
+            componentName: 'hoverBtn',
         }
     },
     mounted() {},

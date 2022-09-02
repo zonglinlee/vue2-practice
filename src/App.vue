@@ -1,10 +1,12 @@
 <template>
     <div id="app">
-        <div :class="{ 'top-menu': topMenu }" class="css-demo">
+        <div
+            :class="{ 'top-menu': topMenu }"
+            class="css-demo"
+            @click="changeMenuPosition"
+        >
             <router-link class="link-item" to="/scroll-snap1">
-                <div class="test" @click="changeMenuPosition">
-                    仿微信列表滑动删除功能
-                </div>
+                仿微信列表滑动删除功能
             </router-link>
             <router-link
                 class="link-item"
@@ -16,13 +18,7 @@
                 class="link-item"
                 to="/button1"
                 @click.native="topMenu = false"
-                >Button1样式
-            </router-link>
-            <router-link
-                class="link-item"
-                to="/button2"
-                @click.native="topMenu = false"
-                >Button2样式
+                >Button样式
             </router-link>
             <router-link
                 class="link-item"
@@ -83,8 +79,18 @@ export default {
         }
     },
     methods: {
-        changeMenuPosition() {
-            this.topMenu = true
+        changeMenuPosition(event) {
+            console.log(event.target)
+            const href = event.target.getAttribute('href')
+            if (href.includes('scroll-snap1')) {
+                this.topMenu = true
+            } else {
+                this.topMenu = false
+            }
+            console.log(this.$route, href)
+            if (href && href.includes(this.$route.path)) {
+                event.target.classList.add('active')
+            }
         },
     },
 }
@@ -93,31 +99,50 @@ export default {
 <style lang="scss">
 .css-demo {
     box-sizing: border-box;
-    @include flexbox(flex-start, space-between, column);
     width: 180px;
-    //height: 100vh;
     font-size: 16px;
     font-weight: bold;
-    //@include position(absolute, left 0 top 0);
     position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
-    background: #ccc;
+    background: #f1f1f1;
     padding: 10px;
     overflow-y: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    a.link-item {
+        height: 50px;
+        text-decoration: none;
+        color: #2b3044;
+        @include text-ellipsis();
+        transition: 0.3s;
+        flex-shrink: 0;
+    }
+    a.link-item:hover {
+        color: dodgerblue;
+    }
+    a.link-item.active {
+        color: dodgerblue;
+    }
 }
 
-.top-menu {
-    @include flexbox();
-    height: initial;
+.top-menu.css-demo {
+    @include flexbox(flex-start, flex-start, row);
     width: 100%;
     position: static;
     flex-wrap: wrap;
     overflow: hidden;
 
     .link-item {
-        max-width: 24%;
+        width: 180px;
+        border-right: 1px solid dodgerblue;
+        margin-bottom: 10px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        padding: 0 5px;
     }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="demo-btns-group">
         <ul class="text-none-select list-style">
             <li
                 v-for="(item, index) in nameList"
@@ -15,13 +15,13 @@
 </template>
 
 <script>
-import svgSectionDivider from '@/views/css1/svgSectionDivider'
-import fixedTableHeader from '@/views/css1/FixedTableHeader'
-import flipCard from '@/views/css1/flipCard'
-import jquery1 from '@/views/css1/jquery1'
-import JSAnimations from '@/views/css1/JSAnimations'
-import animeDeo from '@/views/css1/animeDeo'
-import ThreeDCards from '@/views/css1/ThreeDCards'
+import svgSectionDivider from '@/views/css1/animation/svgSectionDivider'
+import fixedTableHeader from '@/views/css1/animation/FixedTableHeader'
+import flipCard from '@/views/css1/animation/flipCard'
+import jquery1 from '@/views/css1/animation/jquery1'
+import JSAnimations from '@/views/css1/animation/JSAnimations'
+import animeDeo from '@/views/css1/animation/animeDeo'
+import ThreeDCards from '@/views/css1/animation/ThreeDCards'
 export default {
     name: 'index',
     components: {
@@ -55,23 +55,3 @@ export default {
     },
 }
 </script>
-
-<style scoped lang="scss">
-.list-style {
-    list-style: none;
-    display: flex;
-    background: #0c455e;
-    color: white;
-    padding: 0;
-    flex-wrap: wrap;
-    li {
-        padding: 5px;
-        cursor: pointer;
-        text-align: center;
-        border-right: solid 1px white;
-    }
-    li.is-active {
-        color: orangered;
-    }
-}
-</style>

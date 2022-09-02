@@ -171,7 +171,7 @@ export default {
 }
 
 .card .inner-card-backface .image {
-    background-image: url('../../assets/images/inner.png');
+    background-image: url('../../../assets/images/inner.png');
     position: absolute;
     top: 0;
     left: 0;
@@ -238,7 +238,7 @@ export default {
     letter-spacing: 0;
 }
 .card .inner-card {
-    background-image: url('../../assets/images/blastoise.jpg');
+    background-image: url('../../../assets/images/blastoise.jpg');
 }
 .card .glare {
     content: '';

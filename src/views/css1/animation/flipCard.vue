@@ -138,19 +138,19 @@ export default {
 
     &.card-1 {
         .front {
-            background: #222 url('../../assets/images/jenny.jpeg') 90% 35%;
+            background: #222 url('../../../assets/images/jenny.jpeg') 90% 35%;
             background-size: 115%;
         }
 
         .back {
             .img-wrapper {
-                background: transparent url('../../assets/images/jenny.jpeg')
+                background: transparent url('../../../assets/images/jenny.jpeg')
                     70% 45%;
                 background-size: 160%;
             }
 
             .avatar {
-                background: transparent url('../../assets/images/jenny.jpeg')
+                background: transparent url('../../../assets/images/jenny.jpeg')
                     40% 20%;
                 background-size: 130% 130%;
             }

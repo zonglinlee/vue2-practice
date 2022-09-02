@@ -27,3 +27,26 @@ https://github.com/W3cplus/SassMagic/blob/master/src/mixins/_position.scss#L34-L
   }
   position: $position;
 }
+
+@mixin custom-scroll-bar($barWidth:10px) {
+  /* width */
+  ::-webkit-scrollbar {
+    width: $barWidth;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 6px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: lightblue;
+    border-radius: 8px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: dodgerblue;
+  }
+}

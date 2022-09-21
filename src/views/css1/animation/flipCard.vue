@@ -6,7 +6,6 @@
                     <a class="face front" href="#">
                         <div class="title-wrapper">
                             <div class="title">Jenny</div>
-                            <div class="subtitle">hello world</div>
                         </div>
                     </a>
                     <a class="face back" href="#">
@@ -270,15 +269,6 @@ export default {
                     transition: transform 0.15s;
                 }
             }
-
-            .subtitle {
-                font-size: 0.9vw;
-                line-height: 1;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                opacity: 0;
-                transition: opacity 0.15s;
-            }
         }
 
         &:hover {
@@ -298,12 +288,6 @@ export default {
                         transition-delay: 0.15s;
                         transition-duration: 0.2s;
                     }
-                }
-
-                .subtitle {
-                    opacity: 0.7;
-                    transition-delay: 0.2s;
-                    transition-duration: 0.2s;
                 }
             }
         }

@@ -22,6 +22,10 @@ import jquery1 from '@/views/css1/animation/jquery1'
 import JSAnimations from '@/views/css1/animation/JSAnimations'
 import animeDeo from '@/views/css1/animation/animeDeo'
 import ThreeDCards from '@/views/css1/animation/ThreeDCards'
+import dropDown from '@/views/css1/animation/dropDown'
+import FlipImage from '@/views/css1/animation/FlipImage'
+import ImageZoom from '@/views/css1/animation/ImageZoom'
+import FlipCard1 from '@/views/css1/animation/FlipCard1'
 export default {
     name: 'index',
     components: {
@@ -32,6 +36,10 @@ export default {
         JSAnimations,
         animeDeo,
         ThreeDCards,
+        dropDown,
+        FlipImage,
+        ImageZoom,
+        FlipCard1,
     },
     data() {
         return {
@@ -43,6 +51,10 @@ export default {
                 'JSAnimations',
                 'animeDeo',
                 'ThreeDCards',
+                'dropDown',
+                'FlipImage',
+                'ImageZoom',
+                'FlipCard1',
             ],
             componentName: 'fixedTableHeader',
         }

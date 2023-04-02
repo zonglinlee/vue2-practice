@@ -19,6 +19,7 @@ import Button1 from '@/views/css1/button/Button1'
 import Button2 from '@/views/css1/button/Button2'
 import hoverBtn from '@/views/css1/button/hoverBtn'
 import pressBtn from '@/views/css1/button/pressBtn'
+import maskImage from '@/views/css1/button/maskImage'
 export default {
     name: 'index',
     components: {
@@ -26,10 +27,17 @@ export default {
         Button2,
         hoverBtn,
         pressBtn,
+        maskImage,
     },
     data() {
         return {
-            nameList: ['Button1', 'Button2', 'hoverBtn', 'pressBtn'],
+            nameList: [
+                'Button1',
+                'Button2',
+                'hoverBtn',
+                'pressBtn',
+                'maskImage',
+            ],
             componentName: 'hoverBtn',
         }
     },

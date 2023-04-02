@@ -18,7 +18,7 @@
                 class="link-item"
                 to="/button1"
                 @click.native="topMenu = false"
-                >Button样式
+                >CSS style1
             </router-link>
             <router-link
                 class="link-item"

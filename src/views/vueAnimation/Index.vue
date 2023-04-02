@@ -20,6 +20,7 @@ import huaWeiCharge from '@/views/vueAnimation/huaWeiChargeing'
 import stepAnimation from '@/views/vueAnimation/stepAnimation'
 import loading from '@/views/vueAnimation/loading'
 import cssBeer from '@/views/vueAnimation/cssBeer'
+import shuffleCardsVue from './shuffleCards.vue'
 export default {
     name: 'index',
     components: {
@@ -28,6 +29,7 @@ export default {
         stepAnimation,
         loading,
         cssBeer,
+        shuffleCardsVue,
     },
     data() {
         return {
@@ -37,6 +39,7 @@ export default {
                 'stepAnimation',
                 'loading',
                 'cssBeer',
+                'shuffleCardsVue',
             ],
             componentName: 'Animation1',
         }

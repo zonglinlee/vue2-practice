@@ -26,7 +26,7 @@
                 </transition>
             </div>
             <div>
-                <button @click="toggle1 = !toggle1" class="m--10">
+                <button @click="toggle1 = !toggle1" class="m--10 btn-primary">
                     click Me
                 </button>
                 <transition name="toggle1">

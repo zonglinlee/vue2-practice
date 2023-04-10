@@ -12,10 +12,14 @@
   <script src="/js/tailwindcss3.3.0.js"></script>
   <style type="text/tailwindcss">
     @layer components {
-      .btn-primary {
-          @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none
-          focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+        .btn-primary {
+            @apply py-2 px-4 bg-blue-500 text-white text-center font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none transition cursor-pointer
+            focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+          }
+        .center-display {
+          @apply flex justify-center items-center
         }
+
       }
     </style>
   <!--    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.js"></script>-->

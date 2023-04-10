@@ -13,7 +13,7 @@
                     ></div>
                 </transition>
                 <transition name="pop">
-                    <div class="modal" role="dialog" v-if="showModal">
+                    <div class="modal1" role="dialog" v-if="showModal">
                         <h1>Vue Transitions</h1>
                         <p>
                             The <code>&lt;transition&gt;</code> component in Vue
@@ -77,7 +77,7 @@ export default {
     cursor: pointer;
 }
 
-.modal {
+.modal1 {
     position: fixed;
     top: 0;
     right: 0;

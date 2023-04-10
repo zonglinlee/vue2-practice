@@ -21,6 +21,8 @@ import stepAnimation from '@/views/vueAnimation/stepAnimation'
 import loading from '@/views/vueAnimation/loading'
 import cssBeer from '@/views/vueAnimation/cssBeer'
 import shuffleCardsVue from './shuffleCards.vue'
+import BorderAnimation from './BorderAnimation.vue'
+import BackgroundWave from '@/views/vueAnimation/BackgroundWave'
 export default {
     name: 'index',
     components: {
@@ -30,6 +32,8 @@ export default {
         loading,
         cssBeer,
         shuffleCardsVue,
+        BorderAnimation,
+        BackgroundWave,
     },
     data() {
         return {
@@ -40,6 +44,8 @@ export default {
                 'loading',
                 'cssBeer',
                 'shuffleCardsVue',
+                'BorderAnimation',
+                'BackgroundWave',
             ],
             componentName: 'Animation1',
         }

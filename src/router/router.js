@@ -44,6 +44,10 @@ export const constantRoutes = [
         path: '/ui-events',
         component: () => import('@/views/uiEvents/uiEvents'),
     },
+    {
+        path: '/echarts',
+        component: () => import('@/views/echarts/Index'),
+    },
 ]
 
 const createRouter = () =>

@@ -36,8 +36,8 @@ jobs:
         with:
           cmd: build # will run `yarn build:prod` command
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
           BRANCH: project-pages
           FOLDER: dist

@@ -45,6 +45,10 @@ export const constantRoutes = [
         component: () => import('@/views/uiEvents/uiEvents'),
     },
     {
+        path: '/canvasTest',
+        component: () => import('@/views/canvasDemo/Index'),
+    },
+    {
         path: '/echarts',
         component: () => import('@/views/echarts/Index'),
     },

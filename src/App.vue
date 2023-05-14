@@ -67,6 +67,12 @@
             </router-link>
             <router-link
                 class="link-item border-b border-solid border-light-300 px-4"
+                to="/canvasTest"
+                @click.native="topMenu = false"
+            >CanvasTest
+            </router-link>
+            <router-link
+                class="link-item border-b border-solid border-light-300 px-4"
                 to="/echarts"
                 @click.native="topMenu = false"
                 >Echarts

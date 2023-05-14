@@ -23,6 +23,7 @@ import cssBeer from '@/views/vueAnimation/cssBeer'
 import shuffleCardsVue from './shuffleCards.vue'
 import BorderAnimation from './BorderAnimation.vue'
 import BackgroundWave from '@/views/vueAnimation/BackgroundWave'
+import Flip from '@/views/vueAnimation/Flip'
 export default {
     name: 'index',
     components: {
@@ -34,6 +35,7 @@ export default {
         shuffleCardsVue,
         BorderAnimation,
         BackgroundWave,
+        Flip,
     },
     data() {
         return {
@@ -46,6 +48,7 @@ export default {
                 'shuffleCardsVue',
                 'BorderAnimation',
                 'BackgroundWave',
+                'Flip',
             ],
             componentName: 'Animation1',
         }

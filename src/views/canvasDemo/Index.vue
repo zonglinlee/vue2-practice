@@ -16,14 +16,18 @@
 
 <script>
 import canvasDemo1 from '@/views/canvasDemo/canvasDemo1.vue'
+import FabricDemo1 from '@/views/canvasDemo/FabricDemo1'
+import FabricDemo2 from '@/views/canvasDemo/FabricDemo2'
 export default {
     name: 'index',
     components: {
         canvasDemo1,
+        FabricDemo1,
+        FabricDemo2,
     },
     data() {
         return {
-            nameList: ['canvasDemo1'],
+            nameList: ['canvasDemo1', 'FabricDemo1', 'FabricDemo2'],
             componentName: 'canvasDemo1',
         }
     },

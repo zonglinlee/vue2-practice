@@ -69,13 +69,19 @@
                 class="link-item border-b border-solid border-light-300 px-4"
                 to="/canvasTest"
                 @click.native="topMenu = false"
-            >CanvasTest
+                >CanvasTest
             </router-link>
             <router-link
                 class="link-item border-b border-solid border-light-300 px-4"
                 to="/echarts"
                 @click.native="topMenu = false"
                 >Echarts
+            </router-link>
+            <router-link
+                class="link-item border-b border-solid border-light-300 px-4"
+                to="/components"
+                @click.native="topMenu = false"
+                >components
             </router-link>
         </div>
         <div style="margin-left: 180px; padding: 15px 0 0 15px">

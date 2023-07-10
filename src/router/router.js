@@ -52,6 +52,10 @@ export const constantRoutes = [
         path: '/echarts',
         component: () => import('@/views/echarts/Index'),
     },
+    {
+        path: '/components',
+        component: () => import('@/views/components/Index'),
+    },
 ]
 
 const createRouter = () =>

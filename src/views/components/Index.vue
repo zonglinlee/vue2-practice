@@ -16,15 +16,17 @@
 
 <script>
 import VueTreeDemo from '@/views/components/Tree/demo/VueTreeDemo'
+import Rotation from '@/views/components/Rotation'
 
 export default {
     name: 'index',
     components: {
         VueTreeDemo,
+        Rotation,
     },
     data() {
         return {
-            nameList: ['VueTreeDemo'],
+            nameList: ['VueTreeDemo', 'Rotation'],
             componentName: 'VueTreeDemo',
         }
     },
